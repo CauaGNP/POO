@@ -3,6 +3,12 @@ public abstract class Trabalhador{
     private double salarioBase; 
 
     public Trabalhador(String nome, double salarioBase){
+        if(nome == null || nome.trim().isEmpty()){ 
+            throw new IllegalArgumentException();
+        }
+        if(salario <= 0){
+            throw new IllegalArgumentException();
+        }
         this.nome = nome;
         this.salarioBase = salarioBase;
     }
