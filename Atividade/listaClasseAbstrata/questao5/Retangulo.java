@@ -15,7 +15,7 @@ public class Retangulo extends FiguraGeometrica{
         return altura;
     } 
 
-    public double setAltura(double altura){
+    public void setAltura(double altura){
         if(altura <= 0){
             throw new IllegalArgumentException();
         }
@@ -26,7 +26,7 @@ public class Retangulo extends FiguraGeometrica{
         return largura;
     }
 
-    public double setLargura(double largura){
+    public void setLargura(double largura){ 
         if(largura <= 0){
             throw new IllegalArgumentException();
         }
@@ -38,7 +38,7 @@ public class Retangulo extends FiguraGeometrica{
         return altura * largura;
     }
 
-    public doube calcularPerimetro(){
+    public double calcularPerimetro(){
         return (altura * 2) + (largura * 2); 
     }
 }

@@ -1,4 +1,6 @@
-public abstract class Tarefa{
+import java.util.List;
+
+public abstract class Tarefa implements List<Tarefa>{
     private String descricao;
     private int duracaoHoras;
 

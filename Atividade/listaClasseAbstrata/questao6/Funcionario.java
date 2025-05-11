@@ -23,15 +23,15 @@ public class Funcionario{
         this.nome = nome;
     }
 
-    public Tarefa getTarefas(){
-        return tarefas;
+    public List<Tarefa> getTarefas(){
+        return tarefas; 
     }
 
     public void setTarefas(Tarefa tarefas){
-        if(tarefa == null){
+        if(tarefas == null){
             throw new IllegalArgumentException();
         }
-        this.tarefas = tarefas;
+        this.tarefas = tarefas; 
     }
 
 

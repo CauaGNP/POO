@@ -4,7 +4,7 @@ public class Carro extends Transporte{
     }
 
     @Override
-    public double calcularSalario(double distancia){
+    public double calcularTempoViagem(double distancia){
         double velocidadeMedia = getVelocidadeMaxima() * 0.8;
         return distancia / velocidadeMedia;
     }

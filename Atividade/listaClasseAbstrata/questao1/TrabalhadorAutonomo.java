@@ -5,12 +5,12 @@ public class TrabalhadorAutonomo extends Trabalhador{
 
     @Override
     public double calcularSalario(double valor){
-        if(getSalarioBase() < 1500){
+        if(getSalarioBase() < 1500){ 
             setSalarioBase(getSalarioBase() + 200); 
             return getSalarioBase();
         }
         setSalarioBase(getSalarioBase() + (getSalarioBase() * 0.8));
-        return getSalarioBase();
+        return getSalarioBase(); 
     };
     
     @Override

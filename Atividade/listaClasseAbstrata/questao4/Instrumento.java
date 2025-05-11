@@ -2,8 +2,8 @@ public abstract class Instrumento{
     private String modelo;
     private double custo;
 
-    public instrumento(String modelo, double custo){
-        if(modelo == null || modelo.trim().isEmpty){
+    public Instrumento(String modelo, double custo){
+        if(modelo == null || modelo.trim().isEmpty()){
             throw new IllegalArgumentException();
         }
         if(custo < 0){
@@ -18,7 +18,7 @@ public abstract class Instrumento{
     }
 
     public void setModelo(String modelo){
-        if(modelo == null || modelo.trim().isEmpty){
+        if(modelo == null || modelo.trim().isEmpty()){
             throw new IllegalArgumentException();
         }
         this.modelo = modelo;

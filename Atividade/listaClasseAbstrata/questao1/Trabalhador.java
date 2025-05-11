@@ -6,7 +6,7 @@ public abstract class Trabalhador{
         if(nome == null || nome.trim().isEmpty()){ 
             throw new IllegalArgumentException();
         }
-        if(salario <= 0){
+        if(salarioBase <= 0){ 
             throw new IllegalArgumentException();
         }
         this.nome = nome;
@@ -21,11 +21,11 @@ public abstract class Trabalhador{
         this.nome = nome;
     }
 
-    public int getSalarioBase(){
+    public double getSalarioBase(){
         return salarioBase;
     }
 
-    public void setSalarioBase(int salarioBase){
+    public void setSalarioBase(double salarioBase){
         this.salarioBase = salarioBase;
     }
 

@@ -1,4 +1,4 @@
-public abstract class Artista{
+public abstract class Artista{ 
     private String nome;
     private int idade;
 

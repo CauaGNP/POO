@@ -3,4 +3,4 @@ public class Main{
         Pintor pintor = new Pintor();
         pintor.realizarApresentacao();
     }
-}
+} 

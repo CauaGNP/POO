@@ -4,9 +4,9 @@ public class Bicicleta extends Transporte{
     }
 
     @Override
-    public double calcularSalario(double distancia){
-        return distancia / (velocidadeMedia * 0.5);
-    }
+    public double calcularTempoViagem(double distancia){ 
+        return distancia / (velocidadeMaxima * 0.5); 
+    } 
 
     @Override
     public String tipoCombustivel(){

@@ -1,5 +1,5 @@
 public abstract class Transporte{
-    private int velocidadeMaxima;
+    protected int velocidadeMaxima;
     private String marca;
 
     public Transporte(int velocidadeMaxima, String marca){
@@ -7,7 +7,7 @@ public abstract class Transporte{
             throw new IllegalArgumentException();
         }
         if(marca == null || marca.trim().isEmpty()){
-            throw new IllegalArgumentException();;
+            throw new IllegalArgumentException();
         }
         this.velocidadeMaxima = velocidadeMaxima;
         this.marca = marca;
@@ -30,7 +30,7 @@ public abstract class Transporte{
 
     public void setMarca(String marca){
         if(marca == null || marca.trim().isEmpty()){
-            throw new IllegalArgumentException();;
+            throw new IllegalArgumentException();
         }
         this.marca = marca;
     }
